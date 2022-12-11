@@ -1,4 +1,4 @@
-1= test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+--1= test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
 
 CREATE TABLE employee (
 ID SERIAL PRIMARY KEY,
@@ -7,7 +7,7 @@ birthday DATE,
 email VARCHAR(100)
 );
 
-2= Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+--2= Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
 
 insert into employee (name , birthday, email) values ('Alaine Faulder', '1992-06-02', 'afaulder0@dedecms.com');
 insert into employee (name , birthday, email) values ('Holly-anne Sperring', '1993-02-21', 'hsperring1@yellowbook.com');
@@ -60,7 +60,7 @@ insert into employee (name , birthday, email) values ('Biron Stebles', '1963-10-
 insert into employee (name , birthday, email) values ('Sile Thews', '1983-09-26', 'sthews1c@alibaba.com');
 insert into employee (name , birthday, email) values ('Marney Waiting', null, 'mwaiting1d@apple.com');
 
-3= Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+--3= Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
 
 UPDATE employee
 SET name = 'Safak'
@@ -83,7 +83,7 @@ SET email = null
 WHERE name LIKE 'S%k';
 
 
-4=Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+--4=Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 
 DELETE FROM employee
 WHERE name LIKE 'Z%';
